@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - CampusVote Portal</title>
+    <!-- Google Font: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Link to our shared CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-body">
+
+    <!-- Left Side: Gradient Brand Panel with Interactive Feature Cards -->
+    <div class="login-brand-side">
+        <div>
+
+            <h1>CampusVote</h1>
+            <p>The secure, transparent platform built for modern college elections and student representation.</p>
+            
+            <!-- Feature Highlights Cards -->
+            <div class="brand-features">
+                <div class="brand-feature-item">
+                    <span class="brand-feature-icon">🗳️</span>
+                    <div class="brand-feature-text">
+                        <h4>Secure Online Voting</h4>
+                        <p>Cast your ballot safely with authenticated student IDs.</p>
+                    </div>
+                </div>
+
+                <div class="brand-feature-item">
+                    <span class="brand-feature-icon">📊</span>
+                    <div class="brand-feature-text">
+                        <h4>Real-Time Analytics</h4>
+                        <p>Live tracking of voter turnout and transparent poll results.</p>
+                    </div>
+                </div>
+
+                <div class="brand-feature-item">
+                    <span class="brand-feature-icon">⚡</span>
+                    <div class="brand-feature-text">
+                        <h4>Grievance Redressal</h4>
+                        <p>Submit campus complaints and monitor resolution statuses.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="font-size: 13px; color: rgba(255, 255, 255, 0.7); margin-top: 20px;">
+            © 2026 CampusVote Systems • All Rights Reserved
+        </div>
+    </div>
+
+    <!-- Right Side: Large Prominent Login Card Form -->
+    <div class="login-form-side">
+        <div class="login-card">
+            
+            <div style="margin-bottom: 30px;">
+                <h2 style="color: #1e3d59; margin: 0 0 8px 0; font-size: 28px; font-weight: 700;">Welcome Back</h2>
+                <p style="color: #64748b; font-size: 15px; margin: 0;">Please enter your credentials to access portal</p>
+            </div>
+
+            <!-- Login Form -->
+            <form onsubmit="event.preventDefault(); alert('Login logic coming soon with Java Servlets/PostgreSQL!');">
+                
+                <!-- Email Field -->
+                <div style="margin-bottom: 20px;">
+                    <label style="display: block; font-weight: 500; color: #1e3d59; margin-bottom: 8px; font-size: 14px;">Campus Email</label>
+                    <input type="email" placeholder="student@college.edu" required class="login-input">
+                </div>
+
+                <!-- Password Field -->
+                <div style="margin-bottom: 25px;">
+                    <label style="display: block; font-weight: 500; color: #1e3d59; margin-bottom: 8px; font-size: 14px;">Password</label>
+                    <input type="password" placeholder="••••••••" required class="login-input">
+                </div>
+
+                <!-- Login Button -->
+                <button type="submit" class="login-submit-btn">Sign In</button>
+            </form>
+
+            <!-- Not Yet Registered Section -->
+            <div style="text-align: center; margin-top: 25px; padding-top: 20px; border-top: 1px solid #e2e8f0;">
+                <p style="color: #64748b; font-size: 14px; margin: 0;">
+                    Not yet registered? 
+                    <a href="register.html" style="color: #17b978; text-decoration: none; font-weight: 600;">Register here</a>
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

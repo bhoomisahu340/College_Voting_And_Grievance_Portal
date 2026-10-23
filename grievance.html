@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Grievance - CampusVote Portal</title>
+    <!-- Google Font: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Link to our shared CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-brand">
+            <h2>College Grievance And Voting Portal</h2>
+        </div>
+        <div class="nav-right">
+            <a href="dashboard.html" class="btn btn-logout">&larr; Back to Dashboard</a>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <div class="container">
+
+        <!-- Hero Header -->
+        <div class="hero-header">
+            <div class="hero-text">
+                <span class="badge">Student Support</span>
+                <h1>Submit a Campus Grievance</h1>
+                <p>Report academic, infrastructural, or administrative issues securely. Your submission will be tracked for resolution.</p>
+            </div>
+            <div class="portal-status">
+                Secure Portal
+            </div>
+        </div>
+
+        <!-- Grievance Form Card -->
+        <div class="card" style="display: block; max-width: 100%; cursor: default;">
+            <form action="SubmitGrievanceServlet" method="POST" onsubmit="handleGrievanceSubmit(event)">
+                
+                <h3 style="margin-bottom: 20px; font-size: 20px; border-bottom: 2px solid #f1f5f9; padding-bottom: 10px;">Grievance Details</h3>
+
+                <!-- Category Selection -->
+                <div style="margin-bottom: 20px;">
+                    <label style="display: block; font-weight: 500; color: #1e3d59; margin-bottom: 8px; font-size: 14px;">Issue Category</label>
+                    <select name="category" required class="register-input" style="width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px; font-family: 'Poppins', sans-serif;">
+                        <option value="" disabled selected>Select category...</option>
+                        <option value="infrastructure">Infrastructure & Facilities (Labs, Wi-Fi, Water)</option>
+                        <option value="academic">Academic & Faculty Feedback</option>
+                        <option value="canteen">Canteen & Food Services</option>
+                        <option value="administration">Administrative & Examination Cell</option>
+                        <option value="other">Other Campus Issues</option>
+                    </select>
+                </div>
+
+                <!-- Subject Line -->
+                <div style="margin-bottom: 20px;">
+                    <label style="display: block; font-weight: 500; color: #1e3d59; margin-bottom: 8px; font-size: 14px;">Subject / Issue Summary</label>
+                    <input type="text" name="subject" placeholder="e.g., Project Lab Wi-Fi instability in Block B" required class="register-input" style="width: 100%;">
+                </div>
+
+                <!-- Detailed Description -->
+                <div style="margin-bottom: 20px;">
+                    <label style="display: block; font-weight: 500; color: #1e3d59; margin-bottom: 8px; font-size: 14px;">Detailed Description</label>
+                    <textarea name="description" rows="5" placeholder="Provide clear details regarding the location, time, and nature of the issue..." required style="width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px; font-family: 'Poppins', sans-serif; resize: vertical;"></textarea>
+                </div>
+
+                <!-- Anonymity Checkbox -->
+                <div style="margin-bottom: 25px; display: flex; align-items: center; gap: 10px;">
+                    <input type="checkbox" id="anonymous" name="is_anonymous" style="width: 18px; height: 18px; accent-color: #17b978;">
+                    <label for="anonymous" style="font-size: 14px; color: #334155; cursor: pointer;">Submit anonymously (Your identity will be hidden from public view)</label>
+                </div>
+
+                <!-- Submit Button -->
+                <div style="text-align: right;">
+                    <button type="submit" class="btn" style="padding: 14px 35px; font-size: 16px;">Submit Grievance Ticket</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- External JavaScript File -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

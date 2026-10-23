@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - CampusVote Portal</title>
+    <!-- Google Font: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Link to our shared CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-brand">
+            <span style="font-size: 24px;">🏛️</span>
+            <h2>College Grievance And Voting Portal</h2>
+        </div>
+        <div class="nav-right">
+            <span class="user-badge">🛡️ Admin Session</span>
+            <a href="index.html" class="btn-logout">Logout</a>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <div class="container">
+
+        <!-- Hero Header -->
+        <div class="hero-header">
+            <div class="hero-text">
+                <h1>Admin Control Panel ⚙️</h1>
+                <p>Manage college elections, monitor polls, and oversee student grievances.</p>
+            </div>
+            <div class="portal-status"
+                style="border-color: #3498db; color: #3498db; background-color: rgba(52, 152, 219, 0.1);">
+                🔒 Authorized
+            </div>
+        </div>
+
+        <!-- Admin Modules Grid -->
+        <div class="grid">
+
+            <!-- Card 1: Create Election -->
+            <div class="card">
+                <div>
+                    <span class="badge" style="background-color: #e3f2fd; color: #1e3d59;">Poll Management</span>
+                    <h3>Create Election</h3>
+                    <p>Initialize and configure new college elections, voting modules, and candidate slots.</p>
+                </div>
+                <button onclick="alert('Create Election section coming soon')" class="btn">Create Election</button>
+            </div>
+
+            <!-- Card 2: Manage Elections -->
+            <div class="card">
+                <div>
+                    <span class="badge" style="background-color: #e3f2fd; color: #1e3d59;">Live Control</span>
+                    <h3>Manage Elections</h3>
+                    <p>Monitor active voting processes, review candidate lists, and close polls.</p>
+                </div>
+                <button onclick="alert('Manage Elections section coming soon')" class="btn">Manage Elections</button>
+            </div>
+
+            <!-- Card 3: View Grievances -->
+            <div class="card">
+                <div>
+                    <span class="badge" style="background-color: #e3f2fd; color: #1e3d59;">Student Support</span>
+                    <h3>View Grievances</h3>
+                    <p>Review complaints, feedback, and requests submitted securely by students.</p>
+                </div>
+                <button onclick="alert('Grievances section coming soon')" class="btn">View Grievances</button>
+            </div>
+
+            <!-- Card 4: Manage Grievances -->
+            <div class="card">
+                <div>
+                    <span class="badge" style="background-color: #e3f2fd; color: #1e3d59;">Resolution Center</span>
+                    <h3>Manage Grievances</h3>
+                    <p>Update complaint statuses, assign action items, and resolve student tickets.</p>
+                </div>
+                <button onclick="alert('Manage Grievances section coming soon')" class="btn">Manage Grievances</button>
+            </div>
+            <!-- Card 5: Reports & Analytics (Styled as a full-width grievance-banner) -->
+            <div class="grievance-banner">
+                <div>
+                    <span class="badge"
+                        style="background-color: rgba(255, 255, 255, 0.2); color: #ffffff; border: 1px solid rgba(255, 255, 255, 0.4); margin-bottom: 8px;">Data
+                        & Insights</span>
+                    <h3>Reports & Analytics</h3>
+                    <p>Export final election results, analyze voter turnout demographics, and review grievance
+                        resolution statistics.</p>
+                </div>
+                <button onclick="alert('Reports & Analytics section coming soon')" class="btn">View Reports</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

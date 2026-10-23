@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cast Vote - CampusVote Portal</title>
+    <!-- Google Font: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Link to our shared CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-brand">
+            <h2>College Grievance And Voting Portal</h2>
+        </div>
+        <div class="nav-right">
+            <a href="dashboard.html" class="btn btn-logout">&larr; Back to Dashboard</a>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <div class="container">
+
+        <!-- Hero Header (Dynamically updated by script.js) -->
+        <div class="hero-header">
+            <div class="hero-text">
+                <span class="badge">Active Ballot</span>
+                <h1 id="poll-title">Secure Voting</h1>
+                <p id="poll-desc">Select your preferred option below. Your vote is anonymous and final once submitted.</p>
+            </div>
+            <div class="portal-status">
+                Encrypted Ballot
+            </div>
+        </div>
+
+        <!-- Voting Form Card -->
+        <div class="card" style="display: block; max-width: 100%; cursor: default;">
+            <form action="SubmitVoteServlet" method="POST">
+                <!-- Hidden input tracking which poll type is being submitted to the backend -->
+                <input type="hidden" name="poll_type" id="pollTypeInput" value="cr">
+                
+                <h3 style="margin-bottom: 20px; font-size: 20px; border-bottom: 2px solid #f1f5f9; padding-bottom: 10px;">Select One Option</h3>
+
+                <!-- Candidate List Container (Dynamically injected by script.js) -->
+                <div id="candidates-container"></div>
+
+                <!-- Submit Button -->
+                <div style="margin-top: 30px; text-align: right;">
+                    <button type="submit" class="btn" style="padding: 14px 35px; font-size: 16px;">Confirm & Cast Vote</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- External JavaScript File -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

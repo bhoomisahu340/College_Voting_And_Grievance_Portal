@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - CampusVote Portal</title>
+    <!-- Google Font: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Link to our shared CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="register-body">
+
+    <div class="register-container">
+        <div class="register-card">
+            
+            <!-- Page Header -->
+            <div style="text-align: center; margin-bottom: 30px;">
+                
+                <h2 style="color: #1e3d59; margin: 0 0 6px 0; font-size: 28px; font-weight: 700;">Create Account</h2>
+                <p style="color: #64748b; font-size: 15px; margin: 0;">Register for  portal access</p>
+            </div>
+
+            <!-- Registration Form -->
+            <form onsubmit="event.preventDefault(); alert('Registration backend logic coming soon with Java Servlets/PostgreSQL!');">
+                
+                <!-- Full Name -->
+                <div style="margin-bottom: 20px;">
+                    <label style="display: block; font-weight: 500; color: #1e3d59; margin-bottom: 8px; font-size: 14px;">Full Name</label>
+                    <input type="text" placeholder="Enter your full name" required class="register-input">
+                </div>
+
+                <!-- Student ID / Roll Number -->
+                <div style="margin-bottom: 20px;">
+                    <label style="display: block; font-weight: 500; color: #1e3d59; margin-bottom: 8px; font-size: 14px;">Student ID / Roll Number</label>
+                    <input type="text" placeholder="e.g., 2026ECS042" required class="register-input">
+                </div>
+
+                <!-- Campus Email -->
+                <div style="margin-bottom: 20px;">
+                    <label style="display: block; font-weight: 500; color: #1e3d59; margin-bottom: 8px; font-size: 14px;">Campus Email</label>
+                    <input type="email" placeholder="student@college.edu" required class="register-input">
+                </div>
+
+                <!-- Password -->
+                <div style="margin-bottom: 20px;">
+                    <label style="display: block; font-weight: 500; color: #1e3d59; margin-bottom: 8px; font-size: 14px;">Password</label>
+                    <input type="password" placeholder="••••••••" required class="register-input">
+                </div>
+
+                <!-- Confirm Password -->
+                <div style="margin-bottom: 25px;">
+                    <label style="display: block; font-weight: 500; color: #1e3d59; margin-bottom: 8px; font-size: 14px;">Confirm Password</label>
+                    <input type="password" placeholder="••••••••" required class="register-input">
+                </div>
+
+                <!-- Register Submit Button -->
+                <button type="submit" class="register-submit-btn">Register Account</button>
+            </form>
+
+            <!-- Already Registered Link -->
+            <div style="text-align: center; margin-top: 25px; padding-top: 20px; border-top: 1px solid #e2e8f0;">
+                <p style="color: #64748b; font-size: 14px; margin: 0;">
+                    Already have an account? 
+                    <a href="login.html" style="color: #17b978; text-decoration: none; font-weight: 600;">Sign in here</a>
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

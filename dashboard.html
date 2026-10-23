@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <!-- Google Font: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Link to our shared CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-brand">
+            <span style="font-size: 24px;">🏛️</span>
+            <h2>College Grievance And Voting Portal</h2>
+        </div>
+        <div class="nav-right">
+            <span class="user-badge">👤 Student Session</span>
+            <a href="login.html" class="btn-logout">Logout</a>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <div class="container">
+
+        <!-- Hero Header -->
+        <div class="hero-header">
+            <div class="hero-text">
+                <h1>Welcome back, Student! 👋</h1>
+                <p>Select an active voting or feedback module below to participate securely.</p>
+            </div>
+            <div class="portal-status">
+                🟢 Voting Live
+            </div>
+        </div>
+
+        <!-- Voting Cards Grid -->
+        <div class="grid">
+            <!-- Card 1 -->
+            <div class="card">
+                <div><span class="badge">● Live Now</span><!--for live notification-->
+                    <h3>1. CR Appointment</h3>
+                    <p>Vote for your class representative anonymously.</p>
+                </div>
+                <a href="vote.html?poll=cr" class="btn">Vote Now</a><!--javascipt-->
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <h3>2. Teacher Evaluation</h3>
+                <p>Submit your semester feedback for faculty members.</p>
+                <a href="vote.html?poll=teacher" class="btn">Evaluate</a>
+            </div>
+            <div class="card">
+                <h3>3.Placement Polls</h3>
+                <p>Vote on upcoming corporate placement drives and internship preferences</p>
+                <a href="vote.html?poll=placement" class="btn">View Company Polls</a>
+            </div>
+            <div class="card">
+                <h3>4.Committee Elections</h3>
+                <p>Vote for cultural fest, technical club leads, and student council members</p>
+                <a href="vote.html?poll=committee" class="btn">Vote For Committee</a>
+
+            </div>
+            <div class="card">
+                <h3>5.Infrastructure & Facilities Feedback</h3>
+                <p>Share your quick feedback and ratings on college infrastructure and student amenities</p>
+                <a href="vote.html?poll=infrastructure" class="btn">Rate Facilities</a>
+            </div>
+            <div class="card">
+                <h3>6.Annual Tech/Cultural Fest Theme</h3>
+                <p>Help select this year's festival theme, branding, and student activities.</p>
+                <a href="vote.html?poll=fest" class="btn">Select Fest Theme</a>
+            </div>
+            <!-- Grievance Portal Quick Access -->
+            <div class="grievance-banner">
+                <div>
+                    <h3>Facing an issue? Submit a Grievance</h3>
+                    <p>Report academic, infrastructural, or personal issues securely with optional anonymity.</p>
+                </div>
+                <a href="grievance.html" class="btn">Open Grievance Portal</a>
+            </div>
+            <!-- Full-Width Live Polls & Results Banner -->
+<div class="grievance-banner" style="background: linear-gradient(135deg, #1e3d59 0%, #17b978 100%);">
+    <div>
+        <span class="badge" style="background-color: rgba(255, 255, 255, 0.2); color: #ffffff; border: 1px solid rgba(255, 255, 255, 0.4); margin-bottom: 8px;">Real-Time Transparency</span>
+        <h3>Live Polls & Election Results</h3>
+        <p>Track live voter turnouts, review vote counts, and check final outcomes for campus polls and candidate elections.</p>
+    </div>
+    <button onclick="alert('Live Polls & Results view coming soon')" class="btn">View Live Results</button>
+</div>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+
+</html>
